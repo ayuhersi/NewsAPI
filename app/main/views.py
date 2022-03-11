@@ -31,10 +31,15 @@ def index():
         contents = zip( news,desc,img,p_date,url)
         
     for j in range(len(a_articles)): 
-        main_all_articles = a_articles[j]    
-
+        main_all_articles = a_articles[j]  
         
-
+        news.append(main_all_articles['title'])
+        desc.append(main_all_articles['description'])
+        img.append(main_all_articles['urlToImage'])
+        p_date.append(main_all_articles['publishedAt'])
+        url.append(main_article['url'])  
+        
+        all = zip( news,desc,img,p_date,url)
     
     return render_template('index.html',contents=contents,all = all)
 
