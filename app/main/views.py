@@ -27,6 +27,8 @@ def index():
         img.append(main_article['urlToImage'])
         p_date.append(main_article['publishedAt'])
         url.append(main_article['url'])
+        
+        contents = zip( news,desc,img,p_date,url)
 
     
     return render_template('index.html')
