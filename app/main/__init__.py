@@ -1,4 +1,4 @@
 from flask import Blueprint
-from . import views, error 
+from . import error, views 
 main = Blueprint("main", __name__)
 

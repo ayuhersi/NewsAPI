@@ -1,8 +1,9 @@
 from flask import render_template
-from app import app
+from flask import Flask
+from newsapi import NewsApiClient
 # Views
 
-
+app = Flask(__name__)
 @app.route('/')
 def index():
     
@@ -11,3 +12,9 @@ def index():
     '''
     
     return render_template('index.html')
+
+if __name__ =='__main__':
+    app.run(debug=True) 
+
+
+    
