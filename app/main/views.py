@@ -29,9 +29,14 @@ def index():
         url.append(main_article['url'])
         
         contents = zip( news,desc,img,p_date,url)
+        
+    for j in range(len(a_articles)): 
+        main_all_articles = a_articles[j]    
+
+        
 
     
-    return render_template('index.html')
+    return render_template('index.html',contents=contents,all = all)
 
 if __name__ =='__main__':
     app.run(debug=True) 
