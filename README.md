@@ -4,9 +4,10 @@
 {This application allows its users to see various news sources on the home page and checkout articles created by them}
 ## Setup/Installation Requirements
 * Clone the repo {git clone https://github.com/ayuhersi/NewsAPI.git}
-*pip
-*gunicorn
-*flask
+install these to use the application:
+* 1. pip
+* 2. gunicorn
+* 3. flask
 ## Live link
 ## Technologies Used
 Python,html,css
